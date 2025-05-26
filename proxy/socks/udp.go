@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/eycorsican/go-tun2socks/common/log"
-	"github.com/eycorsican/go-tun2socks/core"
+	"github.com/VasiliyShaydullin/go-tun2socks/common/log"
+	"github.com/VasiliyShaydullin/go-tun2socks/core"
 )
 
 // max IP packet size - min IP header size - min UDP header size - min SOCKS5 header size
@@ -109,7 +109,7 @@ func (h *udpHandler) connectInternal(conn core.UDPConn, dest string) error {
 	}
 
 	c.Write(append([]byte{5, socks5UDPAssociate, 0}, []byte{1, 0, 0, 0, 0, 0, 0}...))
-	
+
 	// read VER REP RSV ATYP BND.ADDR BND.PORT
 	if _, err := io.ReadFull(c, buf[:3]); err != nil {
 		return err

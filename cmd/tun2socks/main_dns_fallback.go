@@ -1,3 +1,4 @@
+//go:build dnsfallback
 // +build dnsfallback
 
 package main
@@ -5,8 +6,8 @@ package main
 import (
 	"flag"
 
-	"github.com/eycorsican/go-tun2socks/core"
-	"github.com/eycorsican/go-tun2socks/proxy/dnsfallback"
+	"github.com/VasiliyShaydullin/go-tun2socks/core"
+	"github.com/VasiliyShaydullin/go-tun2socks/proxy/dnsfallback"
 )
 
 func init() {
