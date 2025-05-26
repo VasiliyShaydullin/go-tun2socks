@@ -4,8 +4,8 @@
 package main
 
 import (
-	"github.com/VasiliyShaydullin/go-tun2socks/core"
-	"github.com/VasiliyShaydullin/go-tun2socks/proxy/redirect"
+	"github.com/vasiliyshaydullin/go-tun2socks/core"
+	"github.com/vasiliyshaydullin/go-tun2socks/proxy/redirect"
 )
 
 func init() {

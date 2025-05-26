@@ -6,9 +6,9 @@ package main
 import (
 	"net"
 
-	"github.com/VasiliyShaydullin/go-tun2socks/common/log"
-	"github.com/VasiliyShaydullin/go-tun2socks/core"
-	"github.com/VasiliyShaydullin/go-tun2socks/proxy/socks"
+	"github.com/vasiliyshaydullin/go-tun2socks/common/log"
+	"github.com/vasiliyshaydullin/go-tun2socks/core"
+	"github.com/vasiliyshaydullin/go-tun2socks/proxy/socks"
 )
 
 func init() {
