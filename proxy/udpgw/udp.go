@@ -24,7 +24,7 @@ type udpGwHandler struct {
 	timeout     time.Duration
 }
 
-func NewUDPHandler(proxyHost string, proxyPort uint16, timeout time.Duration) core.UDPConnHandler {
+func NewUDPGWHandler(proxyHost string, proxyPort uint16, timeout time.Duration) core.UDPConnHandler {
 	rand.Seed(time.Now().UnixNano())
 	return &udpGwHandler{
 		proxyHost:   proxyHost,
